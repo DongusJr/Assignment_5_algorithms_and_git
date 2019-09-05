@@ -5,17 +5,4 @@
 
 n = int(input("Enter the length of the sequence: ")) # Do not change this line
 
-seq_num = 0
-difference = 0
 
-#Let the loop run from index 0 to index n-1, that's the total of n numbers
-for i in range(0, n):
-    difference = seq_num*2 - (i-3)  # Here is the sequence a(n) = a(n-1)*2 - (n-3)
-    if 0 <= i <=2:                  # The sequence does not work for a(0), a(1) and a(2), so let's asign them values
-        seq_num += 1
-    else:
-        seq_num = difference        # We store the seq_num here so we can use it for calculation for the next loop
-    if i != (n-1):
-        print(seq_num, end=", ")    # Put a comma when it is not the last number
-    else:
-        print(seq_num)
