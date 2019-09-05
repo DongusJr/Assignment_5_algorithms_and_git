@@ -3,3 +3,4 @@
 # 3. Implement the sequence a(n) = a(n-1) + a(n-2) + a(n-3)
 # 4. print each number of the sequence with a "," inbetween
 
+n = int(input("Enter the length of the sequence: ")) # Do not change this line
